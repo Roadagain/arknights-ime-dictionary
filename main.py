@@ -9,7 +9,7 @@ if len(sys.argv) == 1:
 
 filename = sys.argv[1]
 with open(filename) as f:
-    reader = csv.DictReader(f, delimiter='\t')
+    reader = csv.DictReader(f)
     for row in reader:
         kana = row['読み']
         word = row['単語']
