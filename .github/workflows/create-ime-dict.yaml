@@ -12,8 +12,9 @@ jobs:
         with:
           python-version: "3.x"
       - name: Create an IME dictionary file
-        run: python3 create-ime-dict.py separeted-csv/* > ./arknights-ime-dictionary.txt
+        run: python3 create-ime-dict.py separeted-csv/* > arknights-ime-dictionary.txt
       - name: Archive created dictionary file
         uses: actions/upload-artifact@v3
         with:
-          path: ./arknights-ime-dictionary.txt
+          name: arknights-ime-dictionary.txt
+          path: arknights-ime-dictionary.txt
