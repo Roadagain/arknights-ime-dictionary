@@ -1,8 +1,9 @@
+name: Create an IME dictionary file
 on:
   workflow_dispatch:
 
 jobs:
-  build-and-release:
+  create-ime-dict:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
